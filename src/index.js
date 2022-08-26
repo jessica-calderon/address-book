@@ -9,12 +9,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 <nav class="navbar navbar-light bg-light">
-  <span class="navbar-brand mb-0 h1 ml-3 p-1">React Telephone Directory</span>
+  <span class="navbar-brand mb-0 h1 m-2 p-1">React Telephone Directory</span>
 </nav>
     <App />
-    <footer class="p-2 text-center text-lg-start bg-light text-muted text-center">
+    <footer id="footer" class="p-2 text-center text-lg-start bg-light text-muted text-center">
       <div class="row">
-      <span class="m-2 p-1">Created by <a href="https://github.com/jessica-calderon" target="_blank">Jessica Calderon</a> 2022</span></div>
+      <span class="m-2 p-1 text-center">Created by <a href="https://github.com/jessica-calderon" target="_blank">Jessica Calderon</a> © 2022</span></div>
     </footer>
   </React.StrictMode>
 );

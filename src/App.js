@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+// unique id
 import { v4 as uuidv4 } from "uuid";
 
 export default function App() {
+  // set contact values
   const [contact, setContact] = useState({
     name: "",
     address: "",
     phone: ""
   });
   const [contacts, setContacts] = useState([]);
-
+// add contact values on event 
   const addContact = (e) => {
     e.preventDefault();
     const { name, email, phone } = contact;
@@ -26,6 +28,7 @@ export default function App() {
       { id: uuidv4(), name, email, phone }
     ]);
   };
+  // delete contacts and filter
 
   const deleteContact = (index) => {
     setContacts((contacts) => contacts.filter((_, i) => i !== index));
@@ -33,7 +36,7 @@ export default function App() {
 
   return (
     <div class="row">
-  <div class="col-sm-5">
+  <div class="col-sm-5 m-auto">
     <div class="card m-3">
       <div class="card-body">
     <div class= "form-group" className="App">
@@ -79,9 +82,9 @@ export default function App() {
       </div>
       {contacts.map((contact, index) => {
         return (
-          <div class="d-flex">
+          <div class="d-flex content">
           <div class="row w-100">
-          <div class="col-sm-5">
+          <div class="col-sm-5 m-auto">
             <div class="card m-3">
               <div class="card-body">
               <div key={contact.id}>
@@ -99,7 +102,7 @@ export default function App() {
             </tr>
             </table>
             <div class="row">
-            <button type="button" class="btn btn-danger btn-block" onClick={() => deleteContact(index)}>
+            <button type="button" class="btn btn-danger btn-block mt-2" onClick={() => deleteContact(index)}>
               Delete Contact
             </button>
             </div>
