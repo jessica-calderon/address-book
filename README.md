@@ -12,6 +12,7 @@
 
 ## [Description](#table-of-contents)
 A simple telephone directory where users can add, delete, and see a list of all contacts.
+
 Contact lists include: 
 * name 
 * phone number
