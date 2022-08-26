@@ -11,7 +11,11 @@
 * [Application Preview](#application-preview)
 
 ## [Description](#table-of-contents)
-A simple telephone directory where users can add, delete, and see a list of all contacts. Contact lists include: name, phone number, and email. 
+A simple telephone directory where users can add, delete, and see a list of all contacts.
+Contact lists include: 
+* name 
+* phone number
+* email
 
 ## [Languages](#table-of-contents)
 HTML, Bootstrap CSS, JavaScript, Node.js, React.js
@@ -35,8 +39,9 @@ Thank you for your interest in contributing to this project, however, I am curre
 `npm start`
 
 ## [Application Preview](#table-of-contents)
-Click the image to see the live demo.
-<a href='link' alt='preview video link'><img src='link'></a>
+Live Deployment: https://react-phone-app.herokuapp.com/
+
+<a href='https://react-phone-app.herokuapp.com/' target="_blank" alt='live preview link'><img src='./public/telephone-directory.gif'></a>
 ## [Questions](#table-of-contents)
 Questions? Please contact me at the following links: <br>
 [GitHub](https://github.com/jessica-calderon) <br>
