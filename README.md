@@ -19,17 +19,12 @@ Contact lists include:
 
 ## [Languages](#table-of-contents)
 HTML, Bootstrap CSS, JavaScript, Node.js, React.js
-
-## [Usage](#table-of-contents)
-npm start
-
 ## [Testing](#table-of-contents)
-Currently n/a
+Future implementation
 
 ## [Contributing](#table-of-contents)
 
 Thank you for your interest in contributing to this project, however, I am currently not accepting third party contributions.
-      
 
 ## [Installation](#table-of-contents)
 `git clone git@github.com:jessica-calderon/address-book.git`
