@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <div class="row">
-  <div class="col-sm-4">
+  <div class="col-sm-5">
     <div class="card m-3">
       <div class="card-body">
     <div class= "form-group" className="App">
@@ -79,13 +79,35 @@ export default function App() {
       </div>
       {contacts.map((contact, index) => {
         return (
-          <div key={contact.id}>
-            <p>name : {contact.name}</p>
-            <p>email : {contact.email}</p>
-            <p>phone : {contact.phone}</p>
-            <button type="button" class="btn btn-danger" onClick={() => deleteContact(index)}>
-              delete
+          <div class="d-flex">
+          <div class="row w-100">
+          <div class="col-sm-5">
+            <div class="card m-3">
+              <div class="card-body">
+              <div key={contact.id}>
+                <table>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Number</th>
+                    </tr>
+
+            <tr>
+            <td class="mr-2">{contact.name}</td>
+            <td>{contact.email}</td>
+            <td>{contact.phone}</td>
+            </tr>
+            </table>
+            <div class="row">
+            <button type="button" class="btn btn-danger btn-block" onClick={() => deleteContact(index)}>
+              Delete Contact
             </button>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
           </div>
         );
       })}
