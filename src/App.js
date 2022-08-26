@@ -33,14 +33,14 @@ export default function App() {
 
   return (
     <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
+  <div class="col-sm-4">
+    <div class="card m-3">
       <div class="card-body">
-    <div className="App">
+    <div class= "form-group" className="App">
       <form onSubmit={addContact}>
         <div>
-          <label>name</label>
-          <input
+          <label>Contact Name:</label>
+          <input class="ml-2 mb-1 p-2"
           placeholder="Enter your name"
             value={contact.name}
             onChange={(e) =>
@@ -49,8 +49,9 @@ export default function App() {
           />
         </div>
         <div>
-          <label>email</label>
+          <label>Contact Email:</label>
           <input
+          class="ml-2 mb-1 p-2"
           placeholder="Enter your email"
             value={contact.email}
             onChange={(e) =>
@@ -59,8 +60,8 @@ export default function App() {
           />
         </div>
         <div>
-          <label>phone</label>
-          <input
+          <label class="mr-2">Contact Phone:</label>
+          <input class="ml-2 p-2"
           placeholder="Enter your number"
             value={contact.phone}
             onChange={(e) =>
@@ -68,7 +69,9 @@ export default function App() {
             }
           />
         </div>
-        <button type="submit">add</button>
+        <div class="row">
+        <button class="btn btn-block btn-success mt-2" type="submit">Add Contact</button>
+        </div>
       </form>
       </div>
       </div>
@@ -80,7 +83,7 @@ export default function App() {
             <p>name : {contact.name}</p>
             <p>email : {contact.email}</p>
             <p>phone : {contact.phone}</p>
-            <button type="button" onClick={() => deleteContact(index)}>
+            <button type="button" class="btn btn-danger" onClick={() => deleteContact(index)}>
               delete
             </button>
           </div>
